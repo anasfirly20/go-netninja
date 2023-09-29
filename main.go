@@ -3,28 +3,13 @@ package main
 import "fmt"
 
 func main() {
+	age := 45
 
-	// // WHILE LOOP
-	// x := 0
-	// for x <= 5 {
-	// 	fmt.Println("value of x is:", x)
-	// 	x++
-	// }
-
-	// // FOR LOOP
-	// for i := 0; i <= 5 ; i++ {
-	// 	fmt.Println("value of i is:", i)
-	// }
-
-	// Iterating a slice
-	names := []string{"mario", "luigi", "yoshi", "peach"}
-
-	// for i := 0; i < len(names); i++{
-	// 	fmt.Println("NAME ->>", i, names[i])
-	// }
-
-	// another way to iterate
-	for index, value := range names {
-		fmt.Printf("the value at index %v is %v \n", index, value)
+	if age < 30 {
+		fmt.Println("Age is less than 30")
+	} else if age < 20 {
+		fmt.Println("Age is less than 20")
+	} else {
+		fmt.Println("Age is less than 45")
 	}
 }
