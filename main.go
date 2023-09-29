@@ -17,8 +17,17 @@ func main() {
 	var scores = []int{100, 50, 60}
 	scores[2] = 25
 	scores = append(scores, 85)
-
 	fmt.Println(scores, len(scores))
+
+	// SLICE RANGES
+	rangeOne := names[1:3]
+	rangeTwo := names[2:]
+	rangeThree := names[:3]
+	
+	fmt.Println("rangeOne -->" , rangeOne)
+	fmt.Println("rangeTwo -->",rangeTwo)
+	fmt.Println("rangeThree -->",rangeThree)
+
 }
 
 
