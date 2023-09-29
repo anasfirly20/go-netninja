@@ -19,7 +19,12 @@ func main() {
 	// Iterating a slice
 	names := []string{"mario", "luigi", "yoshi", "peach"}
 
-	for i := 0; i < len(names); i++{
-		fmt.Println("NAME ->>", i, names[i])
+	// for i := 0; i < len(names); i++{
+	// 	fmt.Println("NAME ->>", i, names[i])
+	// }
+
+	// another way to iterate
+	for index, value := range names {
+		fmt.Printf("the value at index %v is %v \n", index, value)
 	}
 }
