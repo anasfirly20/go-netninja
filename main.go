@@ -1,34 +1,11 @@
 package main
 
-import (
-	"fmt"
-	"sort"
-)
+import "fmt"
 
 func main() {
-	// greeting := "Hello there friends"
-
-
-	// fmt.Println(strings.Contains(greeting, "Hello!"))
-	// fmt.Println(strings.ReplaceAll(greeting, "Hello", "Hi"))
-
-	// // original value is unchanged
-	// fmt.Println("original string value =", greeting)
-
-
-	// // 
-	// ages := []int{10, 12, 23, 40, 32, 11, 50, 44, 23}
-	// sort.Ints(ages)
-	// fmt.Println(ages)
-
-	// index := sort.SearchInts(ages, 0)
-	// fmt.Println(index)
-	
-	
-	names := []string{"yoshi", "mario", "peach", "bowser", "luigi"}
-	sort.Strings(names)
-	fmt.Println(names)
-
-	fmt.Println(sort.SearchStrings(names, "peach"))
-	
+	x := 0
+	for x <= 5 {
+		fmt.Println("value of x is:", x)
+		x++
+	}
 }
