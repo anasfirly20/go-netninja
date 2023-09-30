@@ -20,4 +20,21 @@ func main() {
 		fmt.Println(k,"-",v)
 	}
 	
+
+	// ints as key type
+	phonebook := map[int]string{
+		12312312: "mario",
+		34343434: "luigi",
+		56565656: "peach",
+	}
+	
+	fmt.Println(phonebook)
+	// fmt.Println(phonebook[12312312])
+
+	phonebook[12312312] = "anas"
+	fmt.Println(phonebook)
+	
+	phonebook[56565656] = "tomi"
+	fmt.Println(phonebook)
+
 }
