@@ -2,25 +2,8 @@ package main
 
 import "fmt"
 
-func updateName(n *string) {
-	*n = "wedge"
+func main(){
+	mybill := newBill("mario's bill")
+
+	fmt.Println(mybill)
 }
-
-func main() {
-	name := "tifa"
-
-	fmt.Println("memory address of name is:", &name)
-	
-	m := &name
-
-	fmt.Println("memory address:", m)
-	fmt.Println("value at memory address", *m)
-
-	fmt.Println("name BEFORE >", name)
-	updateName(m)
-	fmt.Println("name AFTER >", name)
-	
-}
-
-
-
