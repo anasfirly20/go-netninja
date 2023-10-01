@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func updateName(n string) {
-	n = "wedge"
+func updateName(n *string) {
+	*n = "wedge"
 }
 
 func main() {
@@ -16,9 +16,9 @@ func main() {
 	fmt.Println("memory address:", m)
 	fmt.Println("value at memory address", *m)
 
-	updateName(name)
-
-	fmt.Println("ori name >", name)
+	fmt.Println("name BEFORE >", name)
+	updateName(m)
+	fmt.Println("name AFTER >", name)
 	
 }
 
