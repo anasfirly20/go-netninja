@@ -41,11 +41,13 @@ func (b bill) format() string {
 
 // add item to bill
 func (b *bill) addItem(name string, price float64) {
+	fmt.Println("ADD name >",name )
+	fmt.Println("ADD PRICE >",price )
 	b.items[name] = price
+	fmt.Println("ADD CHECK b >",b )
 }
 
 // update tip
 func (b *bill) updateTip(tip float64){
-	// b.tip = tip
 	(*b).tip = tip
 }
