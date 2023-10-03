@@ -1,5 +1,0 @@
-Bill breakdown: 
-americano:                ...$1.99 
-cheesecake:               ...$2.56 
-tip:                      ...$5 
-total:                    ...$4.55
